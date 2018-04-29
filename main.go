@@ -1,10 +1,9 @@
 package main
 
 import (
-	"golang-practice/db"
 	"fmt"
+	"golang-practice/db"
 )
-
 
 func main() {
 	db := db.CreateDatabase("Development")
