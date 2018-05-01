@@ -25,3 +25,14 @@ func NewUser(name string, salary float64, city string) *User {
 func (u *User) RaiseSalary(salary float64) {
 	u.Salary += salary
 }
+
+
+// Retrieve a name of a user
+func (u *User) GeTName() string {
+	return u.Name
+}
+
+// Change name of a user
+func (u *User) ChangeName(name string) {
+	u.Name = name
+}
