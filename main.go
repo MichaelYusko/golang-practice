@@ -2,10 +2,11 @@ package main
 
 import (
 	"fmt"
-	"golang-practice/db"
+	"golang-practice/models"
 )
 
 func main() {
-	db := db.CreateDatabase("Development")
-	fmt.Println(db.ShowName())
+	user := models.NewUser("Mike", 150.00, "Tokyo")
+	user.RaiseSalary(12.00)
+	fmt.Println(user)
 }
