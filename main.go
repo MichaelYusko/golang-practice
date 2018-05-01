@@ -13,8 +13,6 @@ func main() {
 	startAlarm(alarm)
 }
 
-
-
 func startAlarm(alarm models.Alarm) {
 	alarm.SetTime(time.Now())
 	alarm.SetAlarmSound("wake upp!")

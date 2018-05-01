@@ -10,7 +10,7 @@ type Alarm interface {
 }
 
 type OwnAlarm struct {
-	ID int
+	ID             int
 	WelcomeMessage string
 }
 
@@ -27,6 +27,6 @@ func (a *OwnAlarm) SetAlarmSound(sound string) {
 	panic("implement me!")
 }
 
-func(a *OwnAlarm) Play() {
+func (a *OwnAlarm) Play() {
 	panic("implement me!")
 }
